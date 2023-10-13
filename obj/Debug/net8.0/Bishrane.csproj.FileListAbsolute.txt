@@ -1,0 +1,14 @@
+C:\Projects\Bishrane\bin\Debug\net8.0\Bishrane.exe
+C:\Projects\Bishrane\bin\Debug\net8.0\Bishrane.deps.json
+C:\Projects\Bishrane\bin\Debug\net8.0\Bishrane.runtimeconfig.json
+C:\Projects\Bishrane\bin\Debug\net8.0\Bishrane.dll
+C:\Projects\Bishrane\bin\Debug\net8.0\Bishrane.pdb
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.AssemblyInfoInputs.cache
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.AssemblyInfo.cs
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.csproj.CoreCompileInputs.cache
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.dll
+C:\Projects\Bishrane\obj\Debug\net8.0\refint\Bishrane.dll
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.pdb
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.genruntimeconfig.cache
+C:\Projects\Bishrane\obj\Debug\net8.0\ref\Bishrane.dll
