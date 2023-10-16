@@ -12,3 +12,4 @@ C:\Projects\Bishrane\obj\Debug\net8.0\refint\Bishrane.dll
 C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.pdb
 C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.genruntimeconfig.cache
 C:\Projects\Bishrane\obj\Debug\net8.0\ref\Bishrane.dll
+C:\Projects\Bishrane\obj\Debug\net8.0\Bishrane.sourcelink.json
