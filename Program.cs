@@ -15,8 +15,31 @@ int length1 = closingPosition1 - openingPosition1;
 Console.WriteLine(message.Substring(openingPosition1, length1) + "\n");
 
 string message2 = "What is the value <span>between the tags</span>?";
-int openingPosition2 = message.IndexOf("<span>");
-int closingPosition2 = message.IndexOf("</span>");
-openingPosition2 += 6;
-int length2 = closingPosition2 - openingPosition2;
-Console.WriteLine(message.Substring(openingPosition2, length2));
+int openingPosition2 = message2.IndexOf("<span>");
+int closingPosition2 = message2.IndexOf("</span>");
+if (closingPosition2 > openingPosition2){
+    openingPosition2 += 6;
+    int length2 = closingPosition2 - openingPosition2;
+    Console.WriteLine(message2.Substring(openingPosition2, length2));
+} else {
+    Console.WriteLine("Opening and closing span tags are not properly matched." + "\n");
+}
+
+string message3 = "(What if) I am (only interested) in the last (set of parentheses)?";
+int openingPosition3 = message3.LastIndexOf('(');
+openingPosition3 += 1;
+int closingPosition3 = message3.LastIndexOf(')');
+int length3 = closingPosition3 - openingPosition3;
+Console.WriteLine(message3.Substring(openingPosition3, length3) + "\n");
+
+string message4 = "(What if) there are (more than) one (set of parentheses)?";
+int openingPosition4;
+while (true) {
+    openingPosition4 = message4.IndexOf('(');
+    if (openingPosition4 == -1) break;
+    int closingPosition4 = message4.IndexOf(')');
+    if (closingPosition4 == -1) break;
+    int length4 = closingPosition4 - openingPosition4 - 1;
+    Console.WriteLine(message4.Substring(openingPosition4 + 1, length4));
+    message4 = message4.Substring(closingPosition4 + 1);
+}
