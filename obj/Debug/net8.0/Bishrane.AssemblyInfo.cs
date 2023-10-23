@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bishrane")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bab0cc222f3d51d7b3650dccc01e591a1942262f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f2bc1a45c684cadac720df422c5a05d38cbbc1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bishrane")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bishrane")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

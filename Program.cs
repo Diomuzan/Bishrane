@@ -57,7 +57,65 @@ while (true) {
     if (openingPosition6 == -1) break;
     openingPosition6 += 1;
     int closingPosition6 = message6.IndexOf(')');
-    int length6 = closingPosition6 - openingPosition6; // Korrigierter Index
+    int length6 = closingPosition6 - openingPosition6;
     Console.WriteLine(message6.Substring(openingPosition6, length6));
     message6 = message6.Substring(closingPosition6 + 1);
+    Console.WriteLine("\n");
 }
+
+string message7 = "Help (find) the {opening symbols}";
+Console.WriteLine($"Searching THIS Message: {message7}");
+char[] openSymbols = { '[', '{', '(' };
+int startPosition7 = 6;
+int openingPosition7 = message7.IndexOfAny(openSymbols);
+Console.WriteLine($"Found WITHOUT using startPosition: {message7.Substring(openingPosition7)}");
+openingPosition7 = message7.IndexOfAny(openSymbols, startPosition7);
+Console.WriteLine($"Found WITH using startPosition: {message7.Substring(openingPosition7)} + \"\n");
+
+string message8 = "(What if) I have [different symbols] but every {open symbol} needs a [matching closing symbol]?";
+char[] openSymbols2 = { '[', '{', '(' };
+int closingPosition8 = 0;
+while (true) {
+    int openingPosition8 = message8.IndexOfAny(openSymbols, closingPosition8);
+    if (openingPosition8 == -1) break;
+    string currentSymbol = message8.Substring(openingPosition8, 1);
+    char matchingSymbol = ' ';
+    switch (currentSymbol) {
+        case "[":
+            matchingSymbol = ']';
+            break;
+        case "{":
+            matchingSymbol = '}';
+            break;
+        case "(":
+            matchingSymbol = ')';
+            break;
+    }
+    openingPosition8 += 1;
+    closingPosition8 = message8.IndexOf(matchingSymbol, openingPosition8);
+    int length8 = closingPosition8 - openingPosition8;
+    Console.WriteLine(message8.Substring(openingPosition8, length8));
+    Console.WriteLine("\n");
+}
+
+string data = "12345John Smith          5000  3  ";
+string updatedData = data.Remove(5, 20);
+Console.WriteLine(updatedData + "\n");
+
+string message9 = "This--is--ex-amp-le--da-ta";
+message9 = message9.Replace("--", " ");
+message9 = message9.Replace("-", "");
+Console.WriteLine(message9);
+
+const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+string quantity = "3000";
+int intQuantity = Int16.Parse(quantity);
+string consoleText = "Quantity:" + " " + quantity;
+Console.WriteLine(consoleText + "\n" + input);
+
+
+
+
+
+
+
