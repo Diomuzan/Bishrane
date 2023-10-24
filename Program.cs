@@ -108,10 +108,10 @@ message9 = message9.Replace("-", "");
 Console.WriteLine(message9);
 
 const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
-string quantity = "3000";
+string quantity = "5000";
 int intQuantity = Int16.Parse(quantity);
-string consoleText = "Quantity:" + " " + quantity;
-Console.WriteLine(consoleText + "\n" + input);
+string consoleText = "Quantity:" + " " + quantity + "\n" + "Output:";
+Console.WriteLine(consoleText + input);
 
 
 
